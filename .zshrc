@@ -126,7 +126,7 @@ alias la="ls -al"
 alias vi="vim"
 #export PATH=/home/ckalinowski/bin:$PATH
 export EDITOR=vim
-export GITLAB_TOKEN=7n58LjYgxKJWs_zLz6Mi
+export GITLAB_TOKEN=[TOKEN GOES HERE]
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="PYENV_ROOT/bin:$PATH"
 
