@@ -18,6 +18,7 @@ call plug#begin()
 Plug 'terryma/vim-multiple-cursors'
 Plug 'junegunn/fzf', { 'dir': '~/.vim/.fzf', 'do': './install --bin' }
 Plug 'junegunn/fzf.vim'
+Plug 'janko/vim-test'
 Plug 'valloric/youcompleteme'
 Plug 'octol/vim-cpp-enhanced-highlight'
 Plug 'tpope/vim-fugitive'
@@ -26,7 +27,7 @@ Plug 'itchyny/lightline.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'sheerun/vim-polyglot'
-"Plug 'dense-analysis/ale'
+Plug 'dense-analysis/ale'
 Plug 'airblade/vim-gitgutter'
 Plug 'https://github.com/airblade/vim-gitgutter'
 call plug#end()
