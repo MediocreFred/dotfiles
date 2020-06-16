@@ -1,8 +1,11 @@
+# REMEMBER TO CHANGE DIRECTORY NAMES IF USING ON A DIFFERENT COMPUTER 
+
+
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/home/ckalinowski/.oh-my-zsh"
+export ZSH="/home/<USER>/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -79,7 +82,9 @@ plugins=(
   themes 
   colored-man-pages
   zsh-syntax-highlighting  
+  dnf
   zsh-autosuggestions
+  fzf
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -113,21 +118,19 @@ eval $( dircolors -b $HOME/.dircolors )
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
-#
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
 #alias lg="git log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(auto)%d%C(reset)'"
 alias lg="git log --oneline --abbrev-commit --all --graph"
-alias tools="cd ~/Work/PCD/tools"
+#alias tools="cd ~/Work/PCD/tools"
 alias today="datedir"
-alias avro-file-reader="/home/ckalinowski/Work/PCD/tools/avro-file-reader/target/avro-file-reader"
+#alias avro-file-reader="/home/ckalinowski/Work/PCD/tools/avro-file-reader/target/avro-file-reader"
 alias la="ls -al"
 alias vi="vim"
 #export PATH=/home/ckalinowski/bin:$PATH
 export EDITOR=vim
-export GITLAB_TOKEN=[TOKEN GOES HERE]
+#export ANSIBLE_SLACK_CHANNEL=[SLACK_CHANNEL_ID]
+#export GITLAB_TOKEN=[GIT_LAB_TOCKEN]
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="PYENV_ROOT/bin:$PATH"
-
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
